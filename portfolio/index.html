@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+
+
+
+
+}
+
+
+header{
+    background:#333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    /* position: fixed; */
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    transition: .4s;
+    /* position: fixed; */
+}
+nav a:hover{
+    background-color: #9be77d;
+    padding: 1px;
+    border-radius: 4px;
+}
+
+.indent {
+    text-indent :1cm
+}
+
+section{
+    padding: 30px;
+    /* text-align: center; */
+}
+
+#home{
+    background-color: lightblue;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+
+.profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+/* #project{
+    background-color: lightgray;
+}
+ */
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 20px;
+
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    /* grid-column: ; */
+
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+#contact{
+    background: #f4f4f4;
+}
+#project li{
+    padding: 3px;
+    font-weight: 600;
+}
+.pro{
+    padding-bottom: 4px;
+    font-size: 20px;
+}
+.cont{
+    /* background: #222; */
+    margin-top: 14px;
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ ;   
+}
+#contact a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 4px;
+    margin: 10px;
+}
+
+#contact a:hover{
+    background: green;
+}
+
+footer{
+    background-color: #222;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    
+<div class="container">
+<header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Project</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+<!-- ------home -->
+<section id="home">
+    <img src="https://images.pexels.com/photos/34556864/pexels-photo-34556864.jpeg?cs=srgb&dl=pexels-nurcan-acar-1766320518-34556864.jpg&fm=jpg" class="profile" alt="Danish">
+    <h1>Danish Mansoori</h1>
+    <h3 style="margin-left: 9px;">Frontend Developer</h3>
+    <p class="indent">I build modern , responsive and interactive websites</p>
+</section>
+
+<!-- ------about -->
+<section id="project">
+    <!-- <p class="pro">Project</p>
+    <ol>
+        <li>Portfolio</li>
+        <li>Static LinkedIn Clone</li>
+        <li>Image Gallery</li>
+        <li>Landing Page</li>
+    </ol> -->
+<h3 style="margin:11px ;">Projects</h3>
+    <div class="projects">
+        <div class="card">Portfolio</div>
+        <div class="card">Static LinkedIn Page</div>
+        <div class="card">Image Gallery  </div>
+        <div class="card">Landing Page</div>
+    </div>
+</section >
+
+<!-- ----contact -->
+
+<section id="contact">
+    
+    <h3>Contact Me</h3>
+    <div class="cont">
+        <p><a href="mailto: danishmansoori995@gmail.com">danishmansoori995@gmail.com</a></p>
+        <p><a href="tel:+918899616682">+918899616682</a></p>
+    </div>
+</section>
+
+
+
+<!-- ----------footer -->
+ <footer>
+    <p>&copy; 2026 Danish Portfolio</p>
+</div>
+
+
+
+    
+</body>
+</html>
