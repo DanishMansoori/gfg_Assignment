@@ -89,5 +89,44 @@ s = s + i%10;
 
 
 //  =====9===pattern pyramid
+let prompt = require('prompt-sync')();
+let p = Number(prompt("enter a number  "));
 
+
+
+for (let i = 1; i <= p; i++) {
+   for (let j = 1; j <= p; j++) {
+      process.stdout.write(" * ")
+   }
+   console.log();
+   
+}
+
+//print pyramid pattern of *
+let danish = require('prompt-sync')();
+let m = Number(danish("enter a number  "));
+
+
+
+for (let i= 1; i <= m ; i++) {
+
+   
+
+let row = "";
+//for space 
+for (let j = 1 ; j <= m-i; j++) {
+row += "   ";
+
+}
+for(k = 1; k <= 2*i-1; k++){
+   row += " * ";
+
+}
+// console.log(row);
+process.stdout.write(row);
+console.log();
+
+
+
+}
 
